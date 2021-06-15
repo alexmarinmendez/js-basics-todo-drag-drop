@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+        <script src="app.js" defer></script>
+        <title>Vanilla JS TODO App</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <div id="app-title">
+                    <div><h1>Vanilla JS TODO App</h1></div>
+                </div>
+                <div id="user"><img src="user.png"></div>
+            </div>
+        </header>
+        <main id="app">
+            <section id="board">
+                <div id="infos">
+                    <div class="square"><p id="letter">Js</p></div>
+                    <div id="infos-content">
+                        <div class="infos-title">TODO App</div>
+                        <div class="infos-company">Adapted by @alexmarinmendez</div>
+                    </div>
+                </div>
+                <div id="add-task-form">
+                    <input id="task-value" placeholder="Add a task">
+                    <button id="add-task">+</button>
+                </div>
+            </section>
+            <section id="columns">
+                <div class="column">
+                    <h3 class="column-title">Todo</h3>
+                    <ul class="tasks dropzone" id="tasks-added"></ul>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">In Progress</h3>
+                    <ul class="tasks dropzone" id="tasks-added"></ul>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">Done</h3>
+                    <ul class="tasks dropzone" id="tasks-added"></ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
